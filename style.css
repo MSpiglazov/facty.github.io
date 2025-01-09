@@ -341,7 +341,7 @@ footer .conteiner .img_flex img{
   
   main .conteiner .img,
   main .conteiner .img2 {
-    margin: 50px 0;
+    margin: 50px auto;
   }
    
   main .conteiner .img2{
