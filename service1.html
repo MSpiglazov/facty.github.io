@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>service1</title>
+  <link rel='stylesheet' href='style.css'>
+</head>
+<body>
+
+  <header>
+    <div class='conteiner conteiner_header'>
+      <div class='header_left'>
+        <img src='img\logo1.jpg' alt='Logo'>
+    </div>
+      <div class='header_right'>
+        <h1>Разные интересные вещи</h1>
+        <p>Тут можно узнать о самых интересных вещах со всего света</p>
+       </div>
+    </div>
+  </header>
+
+  <div class='burger' id='burger'>
+    <div class='line line1'></div>
+    <div class='line line2'></div>
+    <div class='line line3'></div>
+  </div>
+ <nav id='nav'>
+    <div class='conteiner nav'>
+      <ul class='nav_conteiner'>
+        <li><a href='./index.html' >Главная</a></li>
+        <li><a href='./blut.html'>Наушники</a></li>
+        <li><a href='./neiro.html'>Нейросети</a></li>
+        <li class='li-vnutri'><a href='#'class='active-nav'>Сервисы</a>
+          <ul class='li-vnutri__list'>
+            <li class='li-vnutri__li '><a class="active-nav" href='#'>Подсчет страниц</a></li>
+          </ul>
+        </li>
+        </ul>
+      </div>
+  </nav>
+
+  <main>
+    <h1 class="sirvice-h1">Сервис по оценке прочинного в книге</h1>
+    <p class="sirvice-p" >Для оценки прочитанного в книге введите количество прочитанных страниц и количество страниц в книге, и нажмите кнопку "Оценить"</p>
+    <div class='conteiner'>
+       <form>
+    <div class='form_input_container'>
+    <label for='input1'>Прочитано: </label>
+    <input id='input1' placeholder='Введите количество страниц' type='number' required>
+    <!--<button id='btn1'>Отправить</button>-->
+    
+    <label for='input2'>Всего:</label>
+    <input id='input2' placeholder='Введите количество страниц' type='number' required>
+    <button id='btn2' type='submit'>Оценить</button><br>
+    </div>
+    <div class='form_input_container'>
+    <h2>Оценка:</h2>
+    <p id='ocenka'></p>
+    </div>
+  </form>
+  
+  
+    </div>
+  </main>
+  
+  <footer>
+    <div class='conteiner grid'>
+      <h3>Автор: Спиглазов М.Ю.</h3>
+        <div class='img_flex'>
+        <img src='img/logo.jpg' class='img2' height='250px' width='auto' alt='logo2'>
+        </div> 
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src='form.js'></script>
+
+</body>
+</html>
